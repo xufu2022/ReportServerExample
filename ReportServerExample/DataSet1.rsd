@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>SELECT        CalendarYear AS Year, CalendarQuarter AS QuarterNumber, 
+                         CASE WHEN CalendarQuarter = 1 THEN 'First Quarter' WHEN CalendarQuarter = 2 THEN 'Second Quarter' WHEN CalendarQuarter = 3 THEN 'Third Quarter' WHEN CalendarQuarter = 4 THEN 'Fourth Quarter' END AS Quarter, 
+                         MonthNumberOfYear AS MonthNumber, EnglishMonthName AS Month, WeekNumberOfYear AS Week, DayNumberOfYear AS Day
+FROM            DimDate</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Year">
+        <DataField>Year</DataField>
+        <rd:TypeName>System.Int16</rd:TypeName>
+      </Field>
+      <Field Name="QuarterNumber">
+        <DataField>QuarterNumber</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="Quarter">
+        <DataField>Quarter</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="MonthNumber">
+        <DataField>MonthNumber</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="Month">
+        <DataField>Month</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Week">
+        <DataField>Week</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="Day">
+        <DataField>Day</DataField>
+        <rd:TypeName>System.Int16</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

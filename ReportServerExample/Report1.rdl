@@ -9,7 +9,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.12.35707.178</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-01-23T09:38:57.2193357Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-01-23T13:46:14.4131291Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -381,7 +381,7 @@
                       </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!Quarter.Value</Value>
+                          <Value>=Fields!QuarterNumber.Value</Value>
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
@@ -426,7 +426,7 @@
                           </Group>
                           <SortExpressions>
                             <SortExpression>
-                              <Value>=Fields!Month.Value</Value>
+                              <Value>=Fields!MonthNumber.Value</Value>
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
@@ -460,6 +460,7 @@
                                   <PaddingBottom>2pt</PaddingBottom>
                                 </Style>
                               </Textbox>
+                              <rd:Selected>true</rd:Selected>
                             </CellContents>
                           </TablixHeader>
                           <TablixMembers>
